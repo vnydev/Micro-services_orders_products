@@ -29,9 +29,9 @@
 
 * http://localhost:8080/
 
-System - PostgreSQL
-Server - postgres
-Username - viney.dev
-Password - test@123
-Database - vnydb
+* System - PostgreSQL
+* Server - postgres
+* Username - viney.dev
+* Password - test@123
+* Database - vnydb
 
