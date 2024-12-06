@@ -1,0 +1,33 @@
+version: '3'
+services:
+    postgres:
+        image: postgres
+        restart: always
+        volumes:
+            - ./data/postgres:/var/lib/postgresql/data
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_DB=vnydb
+            - POSTGRES_USER=viney.dev
+            - POSTGRES_PASSWORD=test@123
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+    orders:
+        image: orders
+        build: ./order-service
+        ports:
+            - 3002:3002
+        depends_on:
+            - postgres
+    products:
+        image: products
+        build: ./product-service
+        ports:
+            - 3001:3001
+        depends_on:
+            - postgres
+
