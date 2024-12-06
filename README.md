@@ -23,3 +23,15 @@
 * POST - http://localhost:3001/products/
 * GET - http://localhost:3001/products/2
 * GET (All) - http://localhost:3001/products/
+
+
+# To view and access the postgres DB please follow the below link and credential.
+
+* http://localhost:8080/
+
+System - PostgreSQL
+Server - postgres
+Username - viney.dev
+Password - test@123
+Database - vnydb
+
